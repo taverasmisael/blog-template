@@ -1,0 +1,6 @@
+{
+  "source": "./src",
+  "dist": "./dist",
+  "displayName": "Blog Super Template",
+  "port": "1234"
+}

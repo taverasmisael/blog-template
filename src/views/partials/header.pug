@@ -1,0 +1,11 @@
+include ../utils/nav.pug
+include ../utils/mdicon.pug
+header.header
+  button.button.button--icon(data-toggle="MainNav")
+    +mdicon("menu", "button__icon", "Toggle Menu")
+  img.header__logo(src=require("@images/logo.svg"), alt="Company Logo")
+  nav#MainNav.header__nav
+    ul.nav
+      +navLink('/', 'index', 'Home')
+      +navLink('/about.html', 'about', 'About')
+      +navLink('/contacts.html', 'contacts', 'Contacts')
