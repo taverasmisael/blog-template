@@ -1,7 +1,6 @@
 @function get-from-map($key, $type, $map) {
   @if map-has-key($map, $key) {
-    $color: map-get($map, $key);
-    @return var(--#{$key}, $color);
+    @return map-get($map, $key);
   } @else {
     @error '[UKNOWN]: Invalid #{$type}: '#{$key}', valid options are: #{map-keys($map)}';
   }

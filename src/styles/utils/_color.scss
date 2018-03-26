@@ -1,4 +1,4 @@
 @function get-color($color: brand-white) {
   $color: 'color--#{$color}';
-  @return get-from-map($color, 'COLOR', $brand-colors);
+  @return var(--#{$color}, get-from-map($color, 'COLOR', $brand-colors));
 }
