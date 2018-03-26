@@ -2,5 +2,5 @@
   "source": "./src",
   "dist": "./dist",
   "displayName": "Blog Super Template",
-  "port": "1234"
+  "port": "8080"
 }
