@@ -31,7 +31,10 @@ const LoadPages = dir =>
 module.exports = {
   context,
   resolve: {
-    alias: { '@images': resolve(SOURCE_FOLDER, 'images/'), '@projectConfig': resolve(__dirname, './config.js') }
+    alias: {
+      '@images': resolve(SOURCE_FOLDER, 'images/'),
+      '@projectConfig': resolve(__dirname, './config.js')
+    }
   },
   entry: {
     app: [resolve(SOURCE_FOLDER, './styles/main.scss'), resolve(SOURCE_FOLDER, './js/index.js')]
