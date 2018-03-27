@@ -1,0 +1,3 @@
+@mixin z-index($position: normal) {
+  z-index: get-from-map($position, 'Z-INDEX', $z-index);
+}
