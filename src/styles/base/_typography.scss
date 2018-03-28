@@ -174,7 +174,8 @@ a {
     margin: ms(0.75) ms(0.5);
   }
 
-  .blockquote {
-    padding: 1.5em 1em;
+  .blockquote .blockquote__quote {
+    line-height: 2;
+    padding: ms(0.5) ms(0.25);
   }
 }
