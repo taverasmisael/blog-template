@@ -1,7 +1,7 @@
 $brand-colors: (
   color--brand-white: #fff,
   color--brand-black: #212121,
-  color--brand-grey: #887c81,
+  color--brand-grey: #3a3736,
   color--brand-main: #ff9100,
   color--brand-main-dark: #ff6d00,
   color--brand-main-light: #ffb74d,
@@ -11,5 +11,9 @@ $brand-colors: (
   color--brand-accent-light: #9575cd,
   color--state-positive: #00c853,
   color--state-negative: #c62828,
-  color--state-neutral: #ffea00
+  color--state-neutral: #ffea00,
+  color--text-normal: rgba(10, 10, 10, 0.8),
+  color--text-inactive: rgba(10, 10, 10, 0.7),
+  color--heading-normal: rgba(10, 10, 10, 1),
+  color--heading-inactive: rgba(10, 10, 10, 0.9)
 );
