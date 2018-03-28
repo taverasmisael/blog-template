@@ -17,13 +17,14 @@ $block: 'nav';
 }
 
 .#{$block} {
+  --nav-width: 50%;
   background: get-color(brand-white);
   bottom: 0;
-  left: -50%;
+  left: calc(var(--nav-width) * -1);
   position: fixed;
   top: 0;
   transition: transform 150ms ease;
-  width: 50%;
+  width: var(--nav-width);
   will-change: transform;
 
   &.#{$block}--active {
@@ -44,7 +45,6 @@ $block: 'nav';
   .#{$block}__menu {
     display: flex;
     flex-flow: column nowrap;
-    padding: get-spacing(2);
 
     .#{$block}__item {
       list-style-type: none;
@@ -61,7 +61,21 @@ $block: 'nav';
     }
 
     .#{$block}__link {
+      display: block;
       padding: get-spacing(2);
+      text-decoration: none;
     }
   }
 }
+
+@include media-breakpoint-up(md) {
+  .#{$block} {
+    --nav-width: 25%;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .#{$block} {
+    --nav-width: 15%;
+  }
+}
+
