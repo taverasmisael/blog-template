@@ -11,7 +11,8 @@
 }
 
 *:focus {
-  outline: 0;
+  outline: 1px solid get-color(brand-main-dark);
+  outline-offset: 2px;
 }
 
 html {
