@@ -1,0 +1,7 @@
+$block: 'footer';
+
+.#{$block} {
+  margin: ms(0) auto;
+  max-width: var(--l--container-width, $container-width);
+  padding: ms(0.5);
+}
