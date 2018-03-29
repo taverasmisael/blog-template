@@ -23,7 +23,7 @@ $block: 'nav';
   left: calc(var(--nav-width) * -1);
   position: fixed;
   top: 0;
-  transition: transform 150ms ease;
+  transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
   width: var(--nav-width);
   will-change: transform;
 
@@ -61,9 +61,37 @@ $block: 'nav';
     }
 
     .#{$block}__link {
+      color: get-color(brand-black);
       display: block;
+      overflow: hidden;
       padding: get-spacing(2);
+      position: relative;
       text-decoration: none;
+      transition: color 200ms ease-in;
+
+      &:hover,
+      &.#{$block}__link--active {
+        color: get-color(brand-main);
+      }
+
+      &::after {
+        background-color: get-color(brand-main-dark);
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 3px;
+        position: absolute;
+        right: 0;
+        transition: width 250ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        width: 0;
+        will-change: width;
+      }
+
+      &:hover::after,
+      &.#{$block}__link--active::after {
+        left: 0;
+        width: 75%;
+      }
     }
   }
 }
@@ -78,4 +106,3 @@ $block: 'nav';
     --nav-width: 15%;
   }
 }
-
