@@ -4,6 +4,10 @@ body {
   line-height: 1.25;
 }
 
+::selection {
+  background-color: get-color(brand-main-light);
+}
+
 h1,
 h2,
 h3,
@@ -21,7 +25,8 @@ h4 {
 h4,
 h5,
 h6,
-p {
+p,
+code {
   margin: 0.125em 0 0.25em;
 }
 
@@ -83,6 +88,28 @@ ol {
 
 a {
   color: get-color(brand-accent);
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: get-color(brand-accent-light);
+  }
+}
+
+code {
+  background: get-color(brand-grey-light);
+  display: block;
+  padding: ms(0.5);
+}
+
+mark {
+  background-color: get-color(state-neutral);
+  padding: 0.25em;
+}
+
+del {
+  opacity: 0.8;
+  text-decoration: line-through;
 }
 
 .material-icons {

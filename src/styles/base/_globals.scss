@@ -2,6 +2,7 @@
   @each $colorName, $color in $brand-colors {
     --#{$colorName}: $color;
   }
+  --l-container-width: $container-width;
 }
 
 *,
