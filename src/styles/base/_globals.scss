@@ -24,7 +24,15 @@ body {
   background-color: #fcfcfc;
 }
 
-figure img {
-  display: block;
-  width: 100%;
+figure {
+  img {
+    @include box-shadow(2);
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    background: get-color(brand-white);
+    padding: get-spacing(1);
+  }
 }

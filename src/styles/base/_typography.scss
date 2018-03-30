@@ -114,6 +114,17 @@ del {
   text-decoration: line-through;
 }
 
+figcaption {
+  color: get-color(text-inactive);
+  display: block;
+  font-size: ms(-0.2);
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1;
+  margin-top: get-spacing(2);
+  text-align: center;
+}
+
 .material-icons {
   font-size: ms(0);
 
@@ -206,5 +217,9 @@ del {
   .blockquote .blockquote__quote {
     line-height: 2;
     padding: ms(0.5) ms(0.25);
+  }
+
+  figcaption {
+    text-align: left;
   }
 }
