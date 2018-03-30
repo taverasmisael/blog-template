@@ -64,6 +64,7 @@
     "material-design-icons": "^3.0.1",
     "mathsass": "^0.10.1",
     "minireset.css": "^0.0.3",
-    "modularscale-sass": "^3.0.5"
+    "modularscale-sass": "^3.0.5",
+    "vanilla-lazyload": "^10.5.2"
   }
 }
