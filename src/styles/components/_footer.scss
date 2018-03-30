@@ -1,9 +1,9 @@
 $block: 'footer';
 
 .#{$block} {
-  margin: ms(0) auto;
+  margin: get-spacing(3) auto;
   max-width: 90%;
-  padding: ms(0.5);
+  padding: get-spacing(2);
 }
 
 @include media-breakpoint-up(lg) {

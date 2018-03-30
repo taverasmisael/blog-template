@@ -1,7 +1,7 @@
 $system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-stack: $system-fonts;
-$container-width: 800px !default;
+$container-width: 576px !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

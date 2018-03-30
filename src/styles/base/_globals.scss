@@ -12,12 +12,7 @@
 }
 
 *:focus {
-  outline: 1px solid get-color(brand-main-dark);
-  outline-offset: 2px;
-}
-
-html {
-  font-size: 18px;
+  outline: 1px solid currentColor;
 }
 
 body {
@@ -34,5 +29,13 @@ figure {
   figcaption {
     background: get-color(brand-white);
     padding: get-spacing(1);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  $container-width: 720px;
+
+  :root {
+    --l--container-width: $container-width;
   }
 }

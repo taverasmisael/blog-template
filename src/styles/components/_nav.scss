@@ -45,6 +45,7 @@ $block: 'nav';
   .#{$block}__menu {
     display: flex;
     flex-flow: column nowrap;
+    margin: get-spacing(3);
 
     .#{$block}__item {
       list-style-type: none;

@@ -3,7 +3,7 @@ $block: 'article';
 .#{$block} {
   display: grid;
   grid-template-columns:
-    [full-start]get-spacing(2) [safe-start]get-spacing(2) [content-start]1fr[content-end] get-spacing(2) [safe-end] get-spacing(2)
+    [full-start]get-spacing(3) [safe-start]get-spacing(3) [content-start]1fr[content-end] get-spacing(3) [safe-end] get-spacing(3)
     [full-end];
   margin: 0 auto;
 
@@ -18,7 +18,7 @@ $block: 'article';
 
   > figure,
   > .section--medium-width > .section--full-width {
-    margin: ms(0) 0;
+    margin: get-spacing(3) 0;
   }
 
   > figure,
