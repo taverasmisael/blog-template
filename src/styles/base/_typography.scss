@@ -104,8 +104,9 @@ code {
 
 mark {
   background-color: get-color(state-neutral);
-  display: inline-block;
+  display: inline;
   margin: 0 0.25em;
+  padding: 0 0.25em;
 }
 
 del {
