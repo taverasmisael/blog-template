@@ -18,12 +18,15 @@ const ToggleActiveClass = (el: Element, activeClass: string) => el.classList.tog
 
 const NavMenu = ({ navSelector, navActiveClass, navTogglers }: NavMenuConfig): NavMenuInstance => {
   const NavElement = document.querySelector(navSelector)
+  const Body = document.body
+
   if (NavElement) {
     const ToggleNavActiveClass = () => ToggleActiveClass(NavElement, navActiveClass)
     const tabTrap = TabTrap({ trappedSelector: navSelector, onEscPressed: ToggleNavActiveClass, closeOnEsc: true })
     const onNavToggled = () => {
       ToggleNavActiveClass()
       tabTrap.toggle()
+      if (Body) ToggleActiveClass(Body, 'disable--overflow-y')
     }
 
     const TogglerElements = [...document.querySelectorAll(navTogglers)]

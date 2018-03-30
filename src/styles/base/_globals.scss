@@ -32,6 +32,10 @@ figure {
   }
 }
 
+.disable--overflow-y {
+  overflow-y: hidden;
+}
+
 @include media-breakpoint-up(xl) {
   $container-width: 720px;
 
