@@ -2,6 +2,12 @@ $block: 'footer';
 
 .#{$block} {
   margin: ms(0) auto;
-  max-width: var(--l--container-width, $container-width);
+  max-width: 90%;
   padding: ms(0.5);
+}
+
+@include media-breakpoint-up(lg) {
+  .#{$block} {
+    max-width: var(--l--container-width, $container-width);
+  }
 }

@@ -3,11 +3,11 @@ $block: 'article';
 .#{$block} {
   display: grid;
   grid-template-columns:
-    [full-start]ms(0.5) [safe-start]ms(0.5) [content-start]1fr[content-end] ms(0.5) [safe-end] ms(0.5)
+    [full-start]get-spacing(2) [safe-start]get-spacing(2) [content-start]1fr[content-end] get-spacing(2) [safe-end] get-spacing(2)
     [full-end];
   margin: 0 auto;
 
-  :first-child {
+  > :first-child {
     margin-top: 0;
   }
 
@@ -35,6 +35,6 @@ $block: 'article';
 
 @include media-breakpoint-up(lg) {
   .#{$block} {
-    grid-template-columns: [full-start]1fr [safe-start]100px [content-start]800px[content-end] 100px[safe-end] 1fr[full-end];
+    grid-template-columns: [full-start]1fr [safe-start]100px [content-start]var(--l--container-width, $container-width) [content-end] 100px[safe-end] 1fr[full-end];
   }
 }

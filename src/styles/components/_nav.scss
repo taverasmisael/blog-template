@@ -28,7 +28,7 @@ $block: 'nav';
   will-change: transform;
 
   &.#{$block}--active {
-    @include box-shadow(2);
+    @include box-shadow(3);
     @include z-index(superior);
     transform: translateX(100%);
 
