@@ -2,7 +2,8 @@
   @each $colorName, $color in $brand-colors {
     --#{$colorName}: $color;
   }
-  --l-container-width: $container-width;
+  --l--container-width: $container-width;
+  --l--container-extended-width: $container-extended-width;
 }
 
 *,
@@ -38,8 +39,20 @@ figure {
 
 @include media-breakpoint-up(xl) {
   $container-width: 720px;
+  $container-extended-width: 1000px;
 
   :root {
     --l--container-width: $container-width;
+    --l--container-extended-width: $container-extended-width;
+  }
+}
+
+@each $colorName, $color in $brand-colors {
+  .u-bg-#{$colorName} {
+    background-color: get-color($colorName, true);
+  }
+
+  .u-color-#{$colorName} {
+    color: get-color($colorName, true);
   }
 }
