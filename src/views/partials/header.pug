@@ -4,10 +4,12 @@ header.header
   button.button.button--icon.js--nav-toggler(data-toggle="MainNav")
     +mdicon("menu", "button__icon", "Toggle Menu")
   .logo-container
-    img.header__logo(src=require("@images/logo.svg"), alt="Company Logo")
+    a(href="/")
+      img.header__logo(src=require("@images/logo.svg"), alt="Company Logo")
   nav#MainNav.nav
     ul.nav__menu
       +navLink('/', 'index', 'Home')
       +navLink('/about.html', 'about', 'About')
+      +navLink('/entry.html', 'blog', 'Blog')
       +navLink('/contacts.html', 'contacts', 'Contacts')
   .nav-overlay.js--nav-toggler
