@@ -4,3 +4,18 @@ append config
   - var pageTitle = require('@projectConfig').APP_NAME
 block content
   main.main
+    section.section
+      .section__content.section__content--extended
+        article.featured-article.u-bg-color--brand-white
+          a.article-cover-link(href="/entry.html")
+          .featured-article__image(role="img" data-src="//picsum.photos/1200/600")
+          .featured-article__details
+            h3.featured-article__title The best article in the blog so far. If doubts check with your doctor
+            p.featured-article__excerpt Now any of your Google Home devices can connect to other Bluetooth speakers so you can control your entertainment experience simply using...
+            span.featured-article__more.button Read More
+              i.button__icon.material-icons arrow_forward
+      .section__content
+        h2.section__title Top Articles
+
+      .section__content
+        h2.section__title Articles List

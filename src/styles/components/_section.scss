@@ -11,5 +11,9 @@ $block: 'section';
   .#{$block}__content {
     margin: 0 auto;
     max-width: var(--l--container-extended-width);
+
+    &.#{$block}__content--extended {
+      max-width: 1280px;
+    }
   }
 }
