@@ -2,11 +2,10 @@ $block: 'related-post-list';
 
 .#{$block} {
   display: grid;
-  grid-row-gap: get-spacing();
+  grid-row-gap: get-spacing(2);
   grid-template-columns: 1fr;
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0 get-spacing(3);
+  max-width: 1000px;
 }
 
 @include media-breakpoint-up(sm) {
