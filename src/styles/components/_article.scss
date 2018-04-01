@@ -2,10 +2,8 @@ $block: 'article';
 
 .#{$block} {
   display: grid;
-  grid-template-columns:
-    [full-start]get-spacing(3) [safe-start]get-spacing(3) [content-start]1fr[content-end] get-spacing(3) [safe-end] get-spacing(3)
-    [full-end];
-  margin: 0 auto;
+  grid-template-columns: [full-start]get-spacing(3) [safe-start]get-spacing(3) [content-start]1fr[content-end] get-spacing(3) [safe-end] get-spacing(3) [full-end];
+  margin-bottom: get-spacing(4);
 
   > :first-child {
     margin-top: 0;

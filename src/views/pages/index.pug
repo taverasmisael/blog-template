@@ -25,7 +25,7 @@ block content
               h4.related-post__title Blog Entry Name for this Post
               span.related-post__date Published on 
                 time 06/22/2018
-              p.related-post__excerpt You care about justice? Look beyond your own pain, Bruce. This city is rotting.
+              span.related-post__excerpt You care about justice? Look beyond your own pain, Bruce. This city is rotting.
           a.related-post(href="/entry.html#2")
             figure.ratio.ratio--16-by-9.related-post__image-container
               img.ratio__element.related-post__image(src="//picsum.photos/16/9" data-src="//picsum.photos/640/360", alt="")
@@ -33,7 +33,7 @@ block content
               h4.related-post__title This is a better blog post than the old one
               span.related-post__date Published on 
                 time 06/22/2018
-              p.related-post__excerpt This is what happens when an unstoppable force meets an immovable object.
+              span.related-post__excerpt This is what happens when an unstoppable force meets an immovable object.
           a.related-post(href="/entry.html#3")
             figure.ratio.ratio--16-by-9.related-post__image-container
               img.ratio__element.related-post__image(src="//picsum.photos/16/9" data-src="//picsum.photos/640/360", alt="")
@@ -41,7 +41,34 @@ block content
               h4.related-post__title A blog post to learn to do X with Y techonlogy
               span.related-post__date Published on 
                 time 06/22/2018
-              p.related-post__excerpt But it's not who you are underneath... it's what you do that defines you.
-
+              span.related-post__excerpt But it's not who you are underneath... it's what you do that defines you.
+    section.section
       .section__content
-        h2.section__title Articles List
+        h3.section__title Last Posts
+        .posts-list
+          .post
+            figure.post__image-container.ratio.ratio--3-by-5
+              a.ratio__element.post__link(href="/entry.html#01")
+                img.post__image(data-src="//picsum.photos/250/150" alt="")
+            span.post__details
+              a.post__link(href="/entry.html#01")
+                h4 There you are! There is nothing to fear but fear itseIf!
+              .post__meta
+                .post-topics
+                  a.post-topics__topic(href="/topic-1") Topic 1
+                  a.post-topics__topic(href="/topic-2") Topic 2
+                  a.post-topics__topic(href="/topic-3") Topic 3
+                time(timespan="1340816908130").post__time 1 hr ago
+          .post
+              figure.post__image-container.ratio.ratio--3-by-5
+                a.ratio__element.post__link(href="/entry.html#01")
+                  img.post__image(data-src="//picsum.photos/250/150" alt="")
+              span.post__details
+                a.post__link(href="/entry.html#01")
+                  h4 There you are! There is nothing to fear but fear itseIf!
+                .post__meta
+                  .post-topics
+                    a.post-topics__topic(href="/topic-1") Topic 1
+                    a.post-topics__topic(href="/topic-2") Topic 2
+                    a.post-topics__topic(href="/topic-3") Topic 3
+                  time(timespan="1340816908130").post__time 1 hr ago

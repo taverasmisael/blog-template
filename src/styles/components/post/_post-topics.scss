@@ -1,0 +1,17 @@
+$block: 'post-topics';
+
+.#{$block} {
+  display: inline-block;
+
+  .#{$block}__topic {
+    background-color: get-color(brand-grey-light);
+    color: get-color(text-inactive);
+    font-size: ms(-0.4);
+    padding: get-spacing();
+    text-decoration: none;
+  }
+
+  .#{$block}__topic + .#{$block}__topic {
+    margin-left: get-spacing();
+  }
+}
