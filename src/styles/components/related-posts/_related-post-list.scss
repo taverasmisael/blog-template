@@ -23,7 +23,7 @@ $block: 'related-post-list';
 }
 
 @include media-breakpoint-up(xl) {
-  .#{$block} {
+  .#{$block}:not(.#{$block}--of-3) {
     grid-template-columns: repeat(4, 1fr);
   }
 }

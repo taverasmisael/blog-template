@@ -32,7 +32,6 @@ $block: 'featured-article';
   }
 
   .article-cover-link {
-    @include z-index(above);
     bottom: 0;
     left: 0;
     position: absolute;

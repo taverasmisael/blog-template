@@ -19,6 +19,10 @@ $block: 'related-post';
     margin-bottom: 0;
   }
 
+  .#{$block}__excerpt {
+    display: none;
+  }
+
   .#{$block}__date {
     color: get-color(text-inactive);
     font-size: ms(-0.8);
@@ -53,6 +57,11 @@ $block: 'related-post';
 
     .#{$block}__title {
       margin-bottom: get-spacing(2);
+    }
+
+    .#{$block}__excerpt {
+      color: get-color(text-normal);
+      display: block;
     }
   }
 }

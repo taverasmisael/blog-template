@@ -3,6 +3,10 @@ $block: 'section';
 .#{$block} {
   padding: get-spacing(2) get-spacing(3);
 
+  & + & {
+    margin-top: get-spacing(4);
+  }
+
   .#{$block}__title {
     display: inline-block;
     text-decoration: underline get-color(brand-accent);
