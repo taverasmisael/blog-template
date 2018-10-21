@@ -1,9 +1,9 @@
 :root {
   @each $colorName, $color in $brand-colors {
-    --#{$colorName}: $color;
+    --#{$colorName}: #{$color};
   }
-  --l--container-width: $container-width;
-  --l--container-extended-width: $container-extended-width;
+  --l--container-width: #{$container-width};
+  --l--container-extended-width: #{$container-extended-width};
 }
 
 *,
@@ -42,8 +42,8 @@ figure {
   $container-extended-width: 1000px;
 
   :root {
-    --l--container-width: $container-width;
-    --l--container-extended-width: $container-extended-width;
+    --l--container-width: #{$container-width};
+    --l--container-extended-width: #{$container-extended-width};
   }
 }
 

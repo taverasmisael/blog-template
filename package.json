@@ -3,6 +3,19 @@
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "release": "yarn standard-version"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.40",
+    "material-design-icons": "^3.0.1",
+    "mathsass": "^0.10.1",
+    "minireset.css": "^0.0.3",
+    "modularscale-sass": "^3.0.5",
+    "vanilla-lazyload": "^10.5.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -67,18 +80,5 @@
     "webpack-jarvis": "^0.3.0",
     "webpack-merge": "^4.1.1",
     "zip-webpack-plugin": "^2.0.0"
-  },
-  "scripts": {
-    "start": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack -p",
-    "release": "yarn standard-version"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.40",
-    "material-design-icons": "^3.0.1",
-    "mathsass": "^0.10.1",
-    "minireset.css": "^0.0.3",
-    "modularscale-sass": "^3.0.5",
-    "vanilla-lazyload": "^10.5.2"
   }
 }
